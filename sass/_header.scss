@@ -6,14 +6,14 @@ header{
     grid-auto-columns: 88% 12%; 
     #titulo{
         grid-column: 1/2; 
-        color: white;
+        color:$color-header;
         font-size: 30px;
         text-align: center;
         padding-left: 280px;
     }
     #bloque_del_usuario{
         grid-column: 2/3;
-        color: white;
+        color:$color-header;
         font-size: 13px;
         margin: auto 0 ;
         display: grid;
@@ -27,7 +27,7 @@ header{
         }
         #texto_usuario{
             margin: auto 0;
-            color: white; 
+            color:$color-header;
             grid-column:2/3;
             text-align: center;
         }
