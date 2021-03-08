@@ -1,0 +1,30 @@
+main{
+    background-color: lightblue;
+    color: black;
+    grid-column: span 1;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 10px;
+    display: grid;
+    align-items: center;
+    padding-bottom: 4px;
+    #menu{
+        text-align: center;
+    }
+    .modulos_menu{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        margin: 10px 20px;
+        border: 2px solid black;
+        border-radius: 10%;
+        padding:10px 15px;
+        p{
+            font-size: 14px;
+        }
+        img{
+            height: 50px;
+            width: 50px;
+            padding-bottom: 10px;
+        }
+    }
+}

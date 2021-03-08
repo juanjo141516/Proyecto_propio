@@ -1,0 +1,27 @@
+nav{
+    background-color:#9BAFEB;
+    color:white;
+    grid-column: span 3;
+    display: grid;
+    grid-auto-columns: 64% 32% 4%; 
+    #bloque_de_navegacion{
+        grid-column: 2/3;
+        margin-top: 25px;
+        #texto_buscar{
+            color:white;
+            margin-right:8px;
+            font-size: 16px;
+        }
+        #barra_buscadora{
+            width: 295px;
+        }
+    }
+    #boton_del_buscador{
+        grid-column: 3/4;
+        #logo_buscador{
+            height: 40px;
+            width: 40px;
+            padding-top:5px;   
+        }
+    } 
+}

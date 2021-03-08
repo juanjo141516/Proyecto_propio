@@ -1,0 +1,35 @@
+header{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:blue;
+    grid-column: span 3;
+    display: grid;
+    grid-auto-columns: 88% 12%; 
+    #titulo{
+        grid-column: 1/2; 
+        color: white;
+        font-size: 30px;
+        text-align: center;
+        padding-left: 280px;
+    }
+    #bloque_del_usuario{
+        grid-column: 2/3;
+        color: white;
+        font-size: 13px;
+        margin: auto 0 ;
+        display: grid;
+        grid-auto-columns:40% 60%;
+        #foto_usuario{
+            height: 52px;
+            width: 52px;
+            clip-path:circle(50% at 50% 50%);
+            opacity: 60%;
+            margin-left: 15px;
+        }
+        #texto_usuario{
+            margin: auto 0;
+            color: white; 
+            grid-column:2/3;
+            text-align: center;
+        }
+    }
+}

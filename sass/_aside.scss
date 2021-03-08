@@ -1,0 +1,142 @@
+aside{
+    grid-column: span 2;
+    background-color: lightblue;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    margin-right: 10px;
+    display: grid;
+    justify-items: center;
+    padding-top: 15px;
+    padding-bottom: 36px;
+}
+fieldset{
+    padding-bottom: 0;
+    .formulario {
+        margin: 18px 0;
+        display: grid;
+        grid-template-columns: 37% 37% 26%;
+        label {
+            width: 185px;
+            margin-top: 2px;
+        }
+        input{
+            width: 200px;
+        }
+        #validacion{
+            margin-left: 15px ;
+            width: 80px;
+        }
+        #input_nombre{
+            width: 255px;
+        }
+        #input_categorias{
+            width: 178px;
+        }
+        #color{
+            width: 20px;
+        }
+        .radio_de_estados{
+            width: 15px;
+            margin-top: 5px  ;
+            margin-bottom: 0px;
+            margin-left: 0;
+            margin-right: 0 ;
+        }
+        .estados{
+            font-size: 15px;
+            margin: 0 0 4px 0;
+        }
+        #checkbox_impuesto{
+            width: 15px;
+            margin-left:0px ;
+        }
+    }     
+    #div_fecha{
+        margin: 18px 0;
+        height: 55px;
+        display: grid;
+        grid-template-columns: 37% 23% 40%;
+        #label_fecha{
+            margin: 20px 0;
+        }
+        #tamaño_input_fecha{
+            width: 123px;
+            margin: 15.5px 0;
+        }
+        #logo_fecha{
+            height: 27px; 
+            width: 27px;
+            margin: 14px 0 14px 4px;
+        }
+    }
+    #div_estado{
+        display: grid;
+        grid-template-columns: 37% 17% 24% 22%;
+        #div_radio_activo{
+            grid-column: 2/3;
+        }
+        #div_radio_suspendido{
+            grid-column: 3/4;
+        }
+        #div_radio_de_baja{
+            grid-column: 4/5;
+        }
+        #div_radio_activo,#div_radio_suspendido,#div_radio_de_baja{
+            input{
+                margin:0;
+            }
+        }
+    }
+    #div_foto{
+        height: 55px;
+        display: grid;
+        grid-template-columns: 37% 24% 39%;
+        #label_foto{
+            margin: 19px 0 ;
+            width: 185px;
+        }
+        #tamaño_input_foto{
+            width:133px;
+            margin: 17px 0;
+        }
+        #logo_de_galeria{
+            height: 30px; 
+            width: 30px;
+            margin: 12px 0px;
+        }
+    }
+    #div_descripcion{
+        margin: 18px 0;
+        display: grid;
+        grid-template-columns: 37% 63%;
+        width: 550px;
+        #label_descripcion{
+            padding-top: 33px;
+            width: 185px;
+            grid-column: 1/2;
+        }
+        #tamaño_descripcion{
+            grid-column: 2/3;
+            width: 325px;
+            height: 80px;
+            resize: none;
+        }
+    }
+    #div_botones{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-items: end;
+        margin: 18px 0 ;
+        button{
+            width: 80px;
+        }
+        #carga{
+            grid-column: 1/2;
+        }
+        #limpiar{
+            grid-column: 2/3;
+            margin-right: 180px;
+        }
+    }    
+}
