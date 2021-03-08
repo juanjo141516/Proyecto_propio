@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Página web</title>
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Sistema integrado de gestión</h1>
+        <div id="bloque_del_usuario">
+            <img src="https://w7.pngwing.com/pngs/659/667/png-transparent-computer-icons-user-profile-blog-others-miscellaneous-rectangle-logo.png" id="foto_usuario" alt="Foto de usuario">
+            <label for="usuario" id="texto_usuario">Usuario 1 </label>
+        </div>     
+    </header>
+
+    <nav>
+        <div id="bloque_de_navegacion">
+            <label for="Buscar" id="texto_buscar">Buscar en la web</label>
+            <input type="search" id="barra_buscadora">
+
+        </div>
+        <button id="boton_del_buscador">                
+            <img id="logo_buscador" src="https://cdn.icon-icons.com/icons2/1129/PNG/128/searchmagnifierinterfacesymbol_79894.png" alt="Lupa">
+            <label for="text" id="texto_del_boton_buscador">Buscar</label>
+        </button>
+    </nav>
+    <main> 
+        <h1 id="menu">Menú</h1>
+        <section class="modulos_menu">
+            <p>Agregar producto</p>
+            <img src="https://cdn.icon-icons.com/icons2/2367/PNG/128/plus_add_insert_icon_143524.png" alt="agregado">
+        </section>
+        <section class="modulos_menu"> 
+            <p>Agregar categorias</p>
+            <img  src="https://cdn.icon-icons.com/icons2/569/PNG/512/pen-black-diagonal-symbol-of-writing-tool_icon-icons.com_54470.png" alt="lapiz">
+        </section>
+        <section class="modulos_menu">
+            <p>Existencias</p>
+            <img  src="https://cdn.icon-icons.com/icons2/606/PNG/128/coins-of-dollars-stack_icon-icons.com_56192.png" alt="monedas">
+        </section>
+        <section class="modulos_menu">
+            <p>Administrar pagos</p>
+            <img src="https://cdn.icon-icons.com/icons2/606/PNG/128/credit-cards-couple_icon-icons.com_56183.png" alt="tarjetas">
+        </section>
+    </main>
+    <aside>
+        <fieldset>
+            <legend>Agregar productos</legend>
+            <form action="venta" method="POST">
+                <div class="formulario">
+                    <label for="codigo">Código* :</label>
+                    <input type="tel" id="codigo" pattern="[0-9]{6}" title="Debe ingresar solo 6 números" required>
+                    <button id="validacion">Validar</button>    
+                </div>
+            
+                <div class="formulario">
+                    <label for="nombre">Nombre* :</label>
+                    <input type="text" type="tel" id="input_nombre" placeholder="Solo letras y números" pattern="[a-zA-Z0-9\s\´\-]{2,100}" title="Solo letras" required>
+                </div>
+
+                <div class="formulario">
+                    <label for="abreviatura">Abreviatura :</label>
+                    <input type="text" id="abreviatura" placeholder="Solo letras" pattern="[a-zA-Z\s\.]{2,10}" title="Solo letras">
+                </div>
+
+                <div class="formulario">
+                    <label for="list_categorias">Categorias* :</label>
+                    <input list="list_categorias" id="input_categorias" required>
+                    <datalist id="list_categorias"> 
+                        <option value="Panes especiales"></option>
+                        <option value="Lácteos"></option>
+                        <option value="Pasteles"></option>
+                        <option value="Lista cerrada de elementos "></option>
+                    </datalist>
+                </div>
+
+                <div class="formulario">
+                    <label for="ruc">RUC Proveedor* :</label>
+                    <input type="tel" id="RUC" maxlength="11"pattern="[0-9]{11}" placeholder="Solo números" title="Solo números" required>
+                </div>
+
+                <div class="formulario">
+                    <label for="precio">Precio* :</label>
+                    <input type="number" min="0" step="0.01" max="10000000" pattern="[0-9]" id="precio" required>
+                </div>
+
+                <div class="formulario">
+                    <label for="color">Color de etiqueta :</label>
+                    <input type="color" id="color">
+                </div>
+
+                <div id="div_fecha">
+                    <label id="label_fecha" for="fecha">Fecha* :</label>
+                    <input type="date" id="tamaño_input_fecha" required>
+                    <img src="https://cdn.icon-icons.com/icons2/936/PNG/128/calendar-with-spring-binder-and-date-blocks_icon-icons.com_73645.png" id="logo_fecha" alt="logo de la fecha">
+                </div>
+
+                <div id="div_estado">
+                    <label id="label_estado" for="estado">Estado* :</label>
+                    <div id="div_radio_activo">
+                            <input type="radio" name="Estado" class="radio_de_estados">
+                            <label class="estados" for="activo">Activo</label>
+                    </div>
+                    <div id="div_radio_suspendido">
+                            <input type="radio" name="Estado" class="radio_de_estados">
+                        <label class="estados" for="Suspendido">Suspendido</label>
+                    </div>
+                    <div id="div_radio_de_baja">
+                            <input type="radio" name="Estado" class="radio_de_estados">
+                            <label class="estados" for="De baja">De baja</label>
+                     </div>
+                </div>
+
+                <div class="formulario">
+                    <label for="afecto_impuesto">Afecto a impuesto* :</label>    
+                    <input type="checkbox" id="checkbox_impuesto">
+                </div>
+
+                <div id="div_foto"> 
+                    <label id="label_foto" for="Seleccione_foto">Foto*</label>
+                    <input id="tamaño_input_foto" type="file" name="foto" size="5mb" accept="image/png, image/jpg">
+                    <img src="https://cdn.icon-icons.com/icons2/1993/PNG/128/frame_gallery_image_images_photo_picture_pictures_icon_123209.png" id="logo_de_galeria" alt="Logo galeria">
+                </div>
+
+                <div id="div_descripcion">
+                    <label id="label_descripcion" for="descripcion">Descripcion* :</label>
+                    <textarea id="tamaño_descripcion"></textarea>
+                </div>
+
+                <div id="div_botones">
+                    <button type="submit" id="carga">Cargar</button>
+                    <button type="reset" id="limpiar">Limpiar</button>
+                </div>
+            </form>
+        </fieldset>
+    </aside>
+    <footer> 
+        <a id="que_hacemos" href="https://www.youtube.com/" target="_BLANK">¿Qué hacemos?</a>
+        <a id="enlaces_principales" href="https://www.google.com/" target="_BLANK">Enlaces principales</a>
+        <a id="contactanos" href="https://zoom.idat.edu.pe/" target="_BLANCK">Contáctanos</a>
+    </footer>  
+</body>
+</html>
