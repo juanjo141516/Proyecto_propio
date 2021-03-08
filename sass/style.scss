@@ -1,0 +1,14 @@
+@import 'header';
+@import 'nav';
+@import 'main';
+@import 'aside';
+@import 'footer';
+
+body{
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-rows:   8% 8% 77% 7%;
+    grid-auto-columns: repeat(3, ifr);
+    gap: 10px;  
+}
