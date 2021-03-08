@@ -12,7 +12,7 @@ header #titulo {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
-  color: white;
+  color: #fff;
   font-size: 30px;
   text-align: center;
   padding-left: 280px;
@@ -22,7 +22,7 @@ header #bloque_del_usuario {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  color: white;
+  color: #fff;
   font-size: 13px;
   margin: auto 0;
   display: -ms-grid;
@@ -41,7 +41,7 @@ header #bloque_del_usuario #foto_usuario {
 
 header #bloque_del_usuario #texto_usuario {
   margin: auto 0;
-  color: white;
+  color: #fff;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
